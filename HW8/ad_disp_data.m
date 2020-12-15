@@ -13,3 +13,10 @@ for i=1:n
 	contract=ceil(m*rand);
 	Acontr(i,contract)=1; %one column per contract. 1's at the ads to be displayed
 end
+
+dlmwrite('A_contr.txt', Acontr, 'delimiter', ',')
+dlmwrite('T_contr.txt', Tcontr, 'delimiter', ',')
+dlmwrite('R.txt', R, 'delimiter', ',')
+dlmwrite('I.txt', I, 'delimiter', ',')
+dlmwrite('p.txt', p, 'delimiter', ',')
+dlmwrite('q.txt', q, 'delimiter', ',')
